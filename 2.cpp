@@ -39,6 +39,15 @@ int main(int argc, char** argv)
 
             in.close();
 
+           /* 
+            k = data.size() / size;
+	        ibeg = k * rank;
+	        iend = k * (rank + 1);
+
+	        if (rank == size - 1)
+		        iend = n;
+                
+            */
             for (int i = 0; i < data.size(); i++)
             {
                 if (data[i] < 0)
